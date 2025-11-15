@@ -30,25 +30,9 @@
     <!-- </form> -->
 
     <script>
-        document.getElementById('btn-post-comment')
-        .addEventListener('click',function(){
-           const commentTextBox = document.getElementById("comment-text-box");
-
-           const newComment = commentTextBox.value;
-
-           const commentContainer = document.getElementById("comment-container");
         
-           const commentElement = document.createElement('p');
-           commentElement.classList.add('comment')
-           commentElement.innerText = newComment;
-
-           commentContainer.appendChild(commentElement);
-
-
-           commentTextBox.value = " ";
-
-        })
     </script>
 </body>
-<script src="./event.js"></script>
+<script src="/DOM/JS/event.js">
+</script>
 </html>
