@@ -1,47 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Delegate</title>
 </head>
+
 <body>
     <h1>Explore the concept of Event Delegate</h1>
-    <!-- ol#item-list>li.item*6{My awesome item -$} -->
-     <ol id="item-list">
-        <li class="item">My awesome item -1</li>
-        <li class="item">My awesome item -2</li>
-        <li class="item">My awesome item -3</li>
-        <li class="item">My awesome item -4</li>
-        <li class="item">My awesome item -5</li>
-        <li class="item">My awesome item -6</li>
-     </ol>
-     <button id="btn-add-item">Add new item</button>
-     <script>
-        const items = document.getElementsByClassName('item');
-        for (const item of items){
-            item.addEventListener('click', function(event){
-            //    console.log(event.target);
-            // event.target.parentNode.removeChild(event.target);
-            })
+    <ol id="item-list">
+        <li class="item">My Awesome Item - 1</li>
+        <li class="item">My Awesome Item - 2</li>
+        <li class="item">My Awesome Item - 3</li>
+        <li class="item">My Awesome Item - 4</li>
+        <li class="item">My Awesome Item - 5</li>
+        <li class="item">My Awesome Item - 6</li>
+    </ol>
+    <button id="btn-add-item">Add new item</button>
+    <script>
 
-            // add a new item
-
-            document.getElementById('btn-add-item')
-            .addEventListener('click', function(){
-                // parent to be added to 
-                const ol = document.getElementById('item-list');
-
-                //new item 
-                const li = document.createElement('li');
-                li.innerText = 'Brand New item added'
-
-                // add the item 
-                ol.appendChild(li);
-            })
-        }
-
-     </script>
+    </script> 
 </body>
+<script src="/DOM/JS/delegate.js"></script>
 
 </html>
