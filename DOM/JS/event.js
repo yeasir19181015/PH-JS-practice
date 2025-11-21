@@ -18,3 +18,4 @@ document.getElementById('btn-post-comment')
            commentTextBox.value = " ";
 
         })
+   
