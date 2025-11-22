@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <script defer src="/DOM/JS/post.js"></script>
+
+
+    <style>
+        .card{
+            border: 2px solid gray;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Load all post</h1>
     <button onclick="handlePost()">Load Post</button>
+    <button onclick="handleUpdate()">Update Post</button>
+    <button onclick="handleCreate()">Create Post</button>
+     
+    <div id="postContainer" class="post-container">
+
+    </div>
 </body>
+
 </html>
