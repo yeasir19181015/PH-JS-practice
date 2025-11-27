@@ -4,7 +4,13 @@ const handleLocalStorage =() => {
         age : 26,
         friends : ["showon","noman"]
     }
-    localStorage.setItem("yeasir",person)
 
-    
-}
+    const convertedToString = JSON.stringify(person);
+    localStorage.setItem("yeasir",convertedToString)
+
+
+} 
+
+const data = localStorage.getItem("yeasir");
+const converted = JSON.parse(data);
+console.log(converted);
