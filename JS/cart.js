@@ -6,7 +6,7 @@ const handleAddToCart =() => {
     const name = productName.value;
     const quantity = productQuantity.value;
 
-    handleSetToLocalStorage(name,quantity)
+    saveProductToLocalStorage(name,quantity)
     displayProduct(name, quantity)
 
     productName.value = "";
@@ -34,7 +34,15 @@ const getProductToLocalStorage = () => {
 }
 
 const saveProductToLocalStorage = (productName,quantity) => {
+    const cart = getProductToLocalStorage();
+    console.log(cart);
     
+}
+
+
+const product = {
+    laptop: 12,
+
 }
 
 
