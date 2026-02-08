@@ -1,7 +1,7 @@
 const handleAddToCart =() => {
+
     const productName = document.getElementById("productName");
     const productQuantity = document.getElementById("productQuantity");
-
 
     const name = productName.value;
     const quantity = productQuantity.value;
@@ -11,6 +11,7 @@ const handleAddToCart =() => {
 
     productName.value = "";
     productQuantity.value = "";
+
 }
 
 
@@ -42,7 +43,7 @@ const saveProductToLocalStorage = (productName,quantity) => {
 
 const product = {
     laptop: 12,
-
+    
 }
 
 
