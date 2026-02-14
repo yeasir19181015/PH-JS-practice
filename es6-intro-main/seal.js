@@ -1,15 +1,22 @@
-const employee = {
-    name: 'Raja Rani',
-    designation: 'QA',
-    salary: 20000,
-    experience: 1,
-    age: 22
-}
+// const employee = {
+//     name: 'Raja Rani',
+//     designation: 'QA',
+//     salary: 20000,
+//     experience: 1,
+//     age: 22
+// }
 
-Object.seal(employee)
-// delete employee.salary
-delete employee.experience
+// Object.seal(employee)
+// // delete employee.salary
+// delete employee.experience
 
-employee.salary = employee.salary + 5000;
-employee.location = 'Dhaka'
-console.log(employee)
+// employee.salary = employee.salary + 5000;
+// employee.location = 'Dhaka'
+// console.log(employee)
+
+
+function min(nums) { return Math.min(nums) }
+console.log(min( [1,3,2 ]));
+
+
+
